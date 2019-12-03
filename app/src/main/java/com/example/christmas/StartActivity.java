@@ -26,20 +26,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StartActivity extends AppCompatActivity {
+    @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_main);
 
-
         Button nextButton = findViewById(R.id.nextBtn);
-        nextButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(final View v) {
-                List names = new ArrayList<>(5);
-                EditText name1 = findViewById(R.id.nameOne);
-                EditText name2 = findViewById(R.id.nameTwo);
-                EditText name3 = findViewById(R.id.nameThree);
-                EditText name4 = findViewById(R.id.nameFour);
-                EditText name5 = findViewById(R.id.nameFive);
+        nextButton.setOnClickListener(unused -> onClick());
+    }
+    private void onClick() {
+//        List names = new ArrayList<>(5);
+//        EditText name1 = findViewById(R.id.nameOne);
+//        EditText name2 = findViewById(R.id.nameTwo);
+//        EditText name3 = findViewById(R.id.nameThree);
+//        EditText name4 = findViewById(R.id.nameFour);
+//        EditText name5 = findViewById(R.id.nameFive);
 
 //                int count = 0;
 //                EditText currentName = name1;
@@ -50,13 +51,11 @@ public class StartActivity extends AppCompatActivity {
 //                    }
 //                }
 
-
-                // Code here executes on main thread after user presses button
-                Intent intent = new Intent(v.getContext(), InfoScreen.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+        // Code here executes on main thread after user presses button
+        System.out.print("hi");
+        Intent intent = new Intent(this, InfoScreen.class);
+        startActivity(intent);
+        finish();
     }
 }
 
