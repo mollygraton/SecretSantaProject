@@ -53,7 +53,7 @@ public class StartActivity extends AppCompatActivity {
 
         // Code here executes on main thread after user presses button
         System.out.print("hi");
-        Intent intent = new Intent(this, InfoScreen.class);
+        Intent intent = new Intent(this, InformationActivity.class);
         startActivity(intent);
         finish();
     }
