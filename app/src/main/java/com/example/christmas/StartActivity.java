@@ -22,34 +22,34 @@ public class StartActivity extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_main);
-        System.out.print("hola");
+        System.out.print("here");
 
         Button nextButton = findViewById(R.id.nextBtn);
         nextButton.setOnClickListener(unused -> onClick());
-        System.out.print("bonjour");
+        System.out.print("here1");
     }
     private void onClick() {
-        List names = new ArrayList<>(5);
-        EditText name1 = findViewById(R.id.nameOne);
-        EditText name2 = findViewById(R.id.nameTwo);
-        EditText name3 = findViewById(R.id.nameThree);
-        EditText name4 = findViewById(R.id.nameFour);
-        EditText name5 = findViewById(R.id.nameFive);
-
-                int count = 0;
-
-                while (count < names.size()) {
-                    int current = (int)(Math.random() * names.size());
-                    if (names.get(current) == null) {
-                        //names.set(current, currentName.get)
-                    }
-                }
+//        List names = new ArrayList<>(5);
+//        EditText name1 = findViewById(R.id.nameOne);
+//        EditText name2 = findViewById(R.id.nameTwo);
+//        EditText name3 = findViewById(R.id.nameThree);
+//        EditText name4 = findViewById(R.id.nameFour);
+//        EditText name5 = findViewById(R.id.nameFive);
+//
+//                int count = 0;
+//
+//                while (count < names.size()) {
+//                    int current = (int)(Math.random() * names.size());
+//                    if (names.get(current) == null) {
+//                        //names.set(current, currentName.get)
+//                    }
+//                }
 
         // Code here executes on main thread after user presses button
         System.out.print("hi");
-        Intent intent = new Intent(this, InformationActivity.class);
+        Intent intent = new Intent(StartActivity.this, InformationActivity.class);
         startActivity(intent);
-        finish();
+        //finish();
     }
 }
 
