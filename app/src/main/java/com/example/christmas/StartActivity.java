@@ -29,21 +29,30 @@ public class StartActivity extends AppCompatActivity {
         System.out.print("here1");
     }
     private void onClick() {
-//        List names = new ArrayList<>(5);
-//        EditText name1 = findViewById(R.id.nameOne);
-//        EditText name2 = findViewById(R.id.nameTwo);
-//        EditText name3 = findViewById(R.id.nameThree);
-//        EditText name4 = findViewById(R.id.nameFour);
-//        EditText name5 = findViewById(R.id.nameFive);
-//
-//                int count = 0;
-//
-//                while (count < names.size()) {
-//                    int current = (int)(Math.random() * names.size());
-//                    if (names.get(current) == null) {
-//                        //names.set(current, currentName.get)
-//                    }
-//                }
+        List names = new ArrayList<>(5);
+        EditText name1 = findViewById(R.id.nameOne);
+        EditText name2 = findViewById(R.id.nameTwo);
+        EditText name3 = findViewById(R.id.nameThree);
+        EditText name4 = findViewById(R.id.nameFour);
+        EditText name5 = findViewById(R.id.nameFive);
+
+        ArrayList<String> tempNames = new ArrayList<String>();
+        tempNames.add(name1.getText().toString());
+        tempNames.add(name2.getText().toString());
+        tempNames.add(name3.getText().toString());
+        tempNames.add(name4.getText().toString());
+        tempNames.add(name5.getText().toString());
+
+        int count = 0;
+        boolean placed = false;
+        for (int i = 0; i < names.size(); i++) {
+            while (placed == false) {
+                int temp = (int) (Math.random() * names.size());
+                if (names.get(temp) == null) {
+
+                }
+            }
+        }
 
         // Code here executes on main thread after user presses button
         System.out.print("hi");

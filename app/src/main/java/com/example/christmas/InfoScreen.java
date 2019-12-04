@@ -26,5 +26,14 @@ public class InfoScreen extends AppCompatActivity {
                 finish();
             }
         });
+        Button giftButton = findViewById(R.id.giftButton);
+        giftButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                // Code here executes on main thread after user presses button
+                Intent intent = new Intent(v.getContext(), GiftActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 }
