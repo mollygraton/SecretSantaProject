@@ -38,6 +38,7 @@
             android:background="#000000">
 
             <TextView
+                android:id="@+id/nameT1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -48,6 +49,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/nameR1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_column="1"
@@ -66,6 +68,7 @@
             android:background="#000000">
 
             <TextView
+                android:id="@+id/nameT2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -76,6 +79,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/nameR2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_column="1"
@@ -94,6 +98,7 @@
             android:background="#000000">
 
             <TextView
+                android:id="@+id/nameT3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -104,6 +109,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/nameR3"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_column="1"
@@ -123,6 +129,7 @@
             android:background="#000000">
 
             <TextView
+                android:id="@+id/nameT4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -133,6 +140,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/nameR4"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_column="1"
@@ -151,6 +159,7 @@
             android:background="#000000">
 
             <TextView
+                android:id="@+id/nameT5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -161,6 +170,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/nameR5"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_column="1"
