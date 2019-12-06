@@ -57,7 +57,17 @@
                 android:background="#FFFFFF"
                 android:gravity="center"
                 android:text=" Text"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                tools:visibility="invisible" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton"
+                android:textOff="SHOW"
+                android:textOn="HIDE" />
+
         </TableRow>
 
         <TableRow
@@ -88,6 +98,12 @@
                 android:gravity="center"
                 android:text=" Text"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View" />
         </TableRow>
 
         <TableRow
@@ -118,6 +134,12 @@
                 android:gravity="center"
                 android:text=" Text"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View" />
         </TableRow>
 
 
@@ -149,6 +171,12 @@
                 android:gravity="center"
                 android:text=" Text"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View" />
         </TableRow>
 
         <TableRow
@@ -179,6 +207,12 @@
                 android:gravity="center"
                 android:text=" Text"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View" />
 
         </TableRow>
 

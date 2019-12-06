@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -65,6 +67,22 @@ public class InfoScreen extends AppCompatActivity {
                 Intent intent = new Intent(v.getContext(), GiftActivity.class);
                 startActivity(intent);
                 finish();
+            }
+        });
+        TextView nameR1 = findViewById(R.id.nameR1);
+        TextView nameR2 = findViewById(R.id.nameR2);
+        TextView nameR3 = findViewById(R.id.nameR3);
+        TextView nameR4 = findViewById(R.id.nameR4);
+        TextView nameR5 = findViewById(R.id.nameR5);
+
+        ToggleButton toggleBtn1 = findViewById(R.id.toggleButton);
+        toggleBtn1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    nameR1.setVisibility(View.VISIBLE);
+                } else {
+                    nameR1.setVisibility(View.INVISIBLE);
+                }
             }
         });
     }
