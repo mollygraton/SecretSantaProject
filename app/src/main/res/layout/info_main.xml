@@ -7,16 +7,16 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="242dp"
+        android:id="@+id/restartBtn"
+        android:layout_width="200dp"
         android:layout_height="74dp"
-        android:text="Button"
+        android:text="Restart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout"
-        app:layout_constraintVertical_bias="0.527" />
+        app:layout_constraintVertical_bias="0.384" />
 
     <TableLayout
 
@@ -30,39 +30,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="#000000"
-
-            >
-
-            <TextView
-                android:layout_width="85dp"
-                android:layout_height="80dp"
-                android:layout_column="0"
-                android:layout_margin="1dp"
-                android:background="#FFFFFF"
-                android:gravity="center"
-                android:text=" Date "
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="85dp"
-                android:layout_height="80dp"
-                android:layout_column="1"
-                android:layout_margin="1dp"
-                android:background="#FFFFFF"
-                android:gravity="center"
-                android:text="Miles "
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textStyle="bold" />
-        </TableRow>
-
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="0dp"
@@ -71,6 +38,7 @@
             android:background="#000000">
 
             <TextView
+                android:id="@+id/nameT1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -81,6 +49,67 @@
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/nameR1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text=" Text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#000000">
+
+            <TextView
+                android:id="@+id/nameT2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text=" Text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/nameR2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text=" Text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#000000">
+
+            <TextView
+                android:id="@+id/nameT3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text=" Text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/nameR3"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_column="1"
@@ -100,6 +129,7 @@
             android:background="#000000">
 
             <TextView
+                android:id="@+id/nameT4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -110,6 +140,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/nameR4"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_column="1"
@@ -128,6 +159,7 @@
             android:background="#000000">
 
             <TextView
+                android:id="@+id/nameT5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -138,6 +170,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/nameR5"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_column="1"
@@ -146,9 +179,42 @@
                 android:gravity="center"
                 android:text=" Text"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
+
         </TableRow>
 
 
     </TableLayout>
+
+    <Button
+        android:id="@+id/giftButton"
+        android:layout_width="200dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="16dp"
+        android:text="Need Gift Ideas?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/restartBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="186dp"
+        android:layout_marginLeft="186dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="186dp"
+        android:layout_marginRight="186dp"
+        android:layout_marginBottom="39dp"
+        android:text="Secret Santa Results!"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
