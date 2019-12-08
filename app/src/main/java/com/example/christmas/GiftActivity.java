@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.android.volley.Request;
@@ -29,6 +31,24 @@ public class GiftActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        loadScreen();Button reloadBtn = findViewById(R.id.reloadButton);
+        reloadBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                loadScreen();
+            }
+        });
+
+        Button homeBtn = findViewById(R.id.homeBtn);
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                Intent intent = new Intent(v.getContext(), StartActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+    }
+
+    private void loadScreen() {
         setContentView(R.layout.activity_gift);
 
         TextView textView = findViewById(R.id.giftTxt);
@@ -52,15 +72,24 @@ public class GiftActivity extends AppCompatActivity {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        System.out.println(" ");
-                        System.out.println(" ");
                         System.out.println(error.toString());
-                        System.out.println(" ");
-                        System.out.println(" ");
-                        textView.setText("What");
                     }
                 });
         queue.add(request);
+        Button reloadBtn = findViewById(R.id.reloadButton);
+        reloadBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                loadScreen();
+            }
+        });
 
+        Button homeBtn = findViewById(R.id.homeBtn);
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                Intent intent = new Intent(v.getContext(), StartActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 }

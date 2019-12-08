@@ -75,6 +75,12 @@ public class InfoScreen extends AppCompatActivity {
         TextView nameR4 = findViewById(R.id.nameR4);
         TextView nameR5 = findViewById(R.id.nameR5);
 
+        nameR1.setVisibility(View.INVISIBLE);
+        nameR2.setVisibility(View.INVISIBLE);
+        nameR3.setVisibility(View.INVISIBLE);
+        nameR4.setVisibility(View.INVISIBLE);
+        nameR5.setVisibility(View.INVISIBLE);
+
         ToggleButton toggleBtn1 = findViewById(R.id.toggleButton);
         toggleBtn1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -82,6 +88,46 @@ public class InfoScreen extends AppCompatActivity {
                     nameR1.setVisibility(View.VISIBLE);
                 } else {
                     nameR1.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
+        ToggleButton toggleBtn2 = findViewById(R.id.toggleButton2);
+        toggleBtn2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    nameR2.setVisibility(View.VISIBLE);
+                } else {
+                    nameR2.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
+        ToggleButton toggleBtn3 = findViewById(R.id.toggleButton3);
+        toggleBtn3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    nameR3.setVisibility(View.VISIBLE);
+                } else {
+                    nameR3.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
+        ToggleButton toggleBtn4 = findViewById(R.id.toggleButton4);
+        toggleBtn4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    nameR4.setVisibility(View.VISIBLE);
+                } else {
+                    nameR4.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
+        ToggleButton toggleBtn5 = findViewById(R.id.toggleButton5);
+        toggleBtn5.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    nameR5.setVisibility(View.VISIBLE);
+                } else {
+                    nameR5.setVisibility(View.INVISIBLE);
                 }
             }
         });
