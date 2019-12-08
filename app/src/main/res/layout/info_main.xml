@@ -10,13 +10,20 @@
         android:id="@+id/restartBtn"
         android:layout_width="200dp"
         android:layout_height="74dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FFF5424B"
+        android:fontFamily="@font/archivo_black"
         android:text="Restart"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout"
-        app:layout_constraintVertical_bias="0.384" />
+        app:layout_constraintVertical_bias="0.2" />
 
     <TableLayout
 
@@ -35,7 +42,7 @@
             android:layout_height="0dp"
             android:layout_margin="1dp"
             android:layout_weight="1"
-            android:background="#f5424b">
+            android:background="#AC2F35">
 
             <TextView
                 android:id="@+id/nameT1"
@@ -44,6 +51,7 @@
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
+                android:fontFamily="sans-serif-condensed-light"
                 android:gravity="center"
                 android:text=" Text"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -55,6 +63,7 @@
                 android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
+                android:fontFamily="sans-serif-condensed-light"
                 android:gravity="center"
                 android:text=" Text"
                 android:textAppearance="?android:attr/textAppearanceLarge"
@@ -62,9 +71,14 @@
 
             <ToggleButton
                 android:id="@+id/toggleButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F5424B"
+                android:backgroundTint="#F5424B"
+                android:fontFamily="@font/archivo_black"
+                android:shadowColor="#F5424B"
                 android:text="ToggleButton"
+                android:textColor="#FFFFFF"
                 android:textOff="SHOW"
                 android:textOn="HIDE" />
 
@@ -75,7 +89,7 @@
             android:layout_height="0dp"
             android:layout_margin="1dp"
             android:layout_weight="1"
-            android:background="#f5424b">
+            android:background="#FFAC2F35">
 
             <TextView
                 android:id="@+id/nameT2"
@@ -84,6 +98,7 @@
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
+                android:fontFamily="sans-serif-condensed-light"
                 android:gravity="center"
                 android:text=" Text"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -95,6 +110,7 @@
                 android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
+                android:fontFamily="sans-serif-condensed-light"
                 android:gravity="center"
                 android:text=" Text"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -102,8 +118,13 @@
             <ToggleButton
                 android:id="@+id/toggleButton2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFF5424B"
+                android:backgroundTint="#FFF5424B"
+                android:fontFamily="@font/archivo_black"
+                android:shadowColor="#FFF5424B"
                 android:text="ToggleButton"
+                android:textColor="#FFFFFF"
                 android:textOff="SHOW"
                 android:textOn="HIDE" />
 
@@ -114,7 +135,7 @@
             android:layout_height="0dp"
             android:layout_margin="1dp"
             android:layout_weight="1"
-            android:background="#f5424b">
+            android:background="#FFAC2F35">
 
             <TextView
                 android:id="@+id/nameT3"
@@ -123,6 +144,7 @@
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
+                android:fontFamily="sans-serif-condensed-light"
                 android:gravity="center"
                 android:text=" Text"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -134,6 +156,7 @@
                 android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
+                android:fontFamily="sans-serif-condensed-light"
                 android:gravity="center"
                 android:text=" Text"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -141,8 +164,12 @@
             <ToggleButton
                 android:id="@+id/toggleButton3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFF5424B"
+                android:backgroundTint="#FFF5424B"
+                android:fontFamily="@font/archivo_black"
                 android:text="ToggleButton"
+                android:textColor="#FFFFFF"
                 android:textOff="SHOW"
                 android:textOn="HIDE" />
 
@@ -154,7 +181,7 @@
             android:layout_height="0dp"
             android:layout_margin="1dp"
             android:layout_weight="1"
-            android:background="#f5424b">
+            android:background="#FFAC2F35">
 
             <TextView
                 android:id="@+id/nameT4"
@@ -163,6 +190,7 @@
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
+                android:fontFamily="sans-serif-condensed-light"
                 android:gravity="center"
                 android:text=" Text"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -174,6 +202,7 @@
                 android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
+                android:fontFamily="sans-serif-condensed-light"
                 android:gravity="center"
                 android:text=" Text"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -181,8 +210,12 @@
             <ToggleButton
                 android:id="@+id/toggleButton4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFF5424B"
+                android:backgroundTint="#FFF5424B"
+                android:fontFamily="@font/archivo_black"
                 android:text="ToggleButton"
+                android:textColor="#FFFFFF"
                 android:textOff="SHOW"
                 android:textOn="HIDE" />
 
@@ -193,7 +226,7 @@
             android:layout_height="0dp"
             android:layout_margin="1dp"
             android:layout_weight="1"
-            android:background="#f5424b">
+            android:background="#FFAC2F35">
 
             <TextView
                 android:id="@+id/nameT5"
@@ -202,6 +235,7 @@
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
+                android:fontFamily="sans-serif-condensed-light"
                 android:gravity="center"
                 android:text=" Text"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -213,15 +247,20 @@
                 android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
+                android:fontFamily="sans-serif-condensed-light"
                 android:gravity="center"
                 android:text=" Text"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <ToggleButton
                 android:id="@+id/toggleButton5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFF5424B"
+                android:backgroundTint="#FFF5424B"
+                android:fontFamily="@font/archivo_black"
                 android:text="ToggleButton"
+                android:textColor="#FFFFFF"
                 android:textOff="SHOW"
                 android:textOn="HIDE" />
 
@@ -234,30 +273,36 @@
         android:id="@+id/giftButton"
         android:layout_width="200dp"
         android:layout_height="74dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginRight="11dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FFF5424B"
+        android:fontFamily="@font/archivo_black"
         android:text="Need Gift Ideas?"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/restartBtn"
+        app:layout_constraintHorizontal_bias="0.384"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.2" />
 
     <TextView
         android:id="@+id/Title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="292dp"
+        android:layout_height="47dp"
         android:layout_marginStart="186dp"
-        android:layout_marginLeft="186dp"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="186dp"
-        android:layout_marginRight="186dp"
         android:layout_marginBottom="39dp"
+        android:fontFamily="@font/archivo_black"
         android:text="Secret Santa Results!"
+        android:textColor="#F5424B"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />

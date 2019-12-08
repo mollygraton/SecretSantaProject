@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:color="#ffc9c7"
     android:layout_height="match_parent"
-    android:background="#00D89999"
+    android:background="#FFF5424B"
+    android:color="#ffc9c7"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main"
@@ -13,9 +13,12 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="192dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/archivo_black"
         android:text="Secret Santa!"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -26,7 +29,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="207dp"
-        android:layout_height="422dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/nextBtn"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,6 +41,7 @@
             android:id="@+id/nameOne"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Name" />
@@ -46,6 +50,7 @@
             android:id="@+id/nameTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Name" />
@@ -54,6 +59,7 @@
             android:id="@+id/nameThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Name" />
@@ -62,6 +68,7 @@
             android:id="@+id/nameFour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Name" />
@@ -70,6 +77,7 @@
             android:id="@+id/nameFive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Name" />
@@ -77,10 +85,13 @@
 
     <Button
         android:id="@+id/nextBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="110dp"
+        android:layout_height="61dp"
         android:layout_marginBottom="68dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/archivo_black"
         android:text="Next"
+        android:textColor="#FFF5424B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
