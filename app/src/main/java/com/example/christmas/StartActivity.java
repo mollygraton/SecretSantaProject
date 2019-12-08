@@ -7,6 +7,8 @@ import android.widget.EditText;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
+import android.graphics.drawable.AnimationDrawable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 
 public class StartActivity extends AppCompatActivity implements Serializable {
@@ -17,6 +19,11 @@ public class StartActivity extends AppCompatActivity implements Serializable {
 
         Button nextButton = findViewById(R.id.nextBtn);
         nextButton.setOnClickListener(unused -> onClick());
+        ConstraintLayout constraintLayout = findViewById(R.id.ConstraintLayout);
+        AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(10);
+        animationDrawable.setExitFadeDuration(2000);
+        animationDrawable.start();
     }
     private void onClick() {
         EditText name1 = findViewById(R.id.nameOne);
