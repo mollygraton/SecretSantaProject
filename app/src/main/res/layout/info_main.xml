@@ -10,9 +10,9 @@
         android:id="@+id/restartBtn"
         android:layout_width="200dp"
         android:layout_height="74dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="9dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="2dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="#FFF5424B"
         android:fontFamily="@font/archivo_black"
@@ -23,7 +23,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.166" />
 
     <TableLayout
 
@@ -273,7 +273,7 @@
         android:id="@+id/giftButton"
         android:layout_width="200dp"
         android:layout_height="74dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="10dp"
